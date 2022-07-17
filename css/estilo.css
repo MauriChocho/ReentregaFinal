@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: blanchedalmond;
+  min-height: 100%;
+  width: 100%; }
+
+.fondo {
+  background-color: blanchedalmond; }
+
+.fondo404 {
+  background-color: blanchedalmond;
+  height: 700px; }
+
+@media screen and (min-width: 768px) {
+  .fondo404 {
+    background-color: blanchedalmond;
+    height: 100%; } }
+
+/* INICIO INDEX */
+.navbar {
+  border-bottom: 2px #242424 solid;
+  color: black; }
+  .navbar .h2 {
+    margin-left: 10px; }
+  .navbar .nav-link {
+    font-size: 1rem;
+    font-weight: 650;
+    color: black; }
+    .navbar .nav-link:hover {
+      color: white; }
+
+.qSomos {
+  grid-area: qSomos;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  text-decoration: none;
+  min-width: 100%;
+  align-content: center;
+  text-align: center; }
+  .qSomos h3 {
+    background-color: #71fb8d;
+    grid-area: qS3;
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 15px; }
+  .qSomos .p1 {
+    grid-area: p1;
+    background-color: #71fb8d;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 10px; }
+  .qSomos .img {
+    margin: 20px auto; }
+
+.unPoco .p2, .unPoco .p3 {
+  background-color: #71fb8d;
+  color: black;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 15px;
+  margin: 15px auto;
+  letter-spacing: 2px; }
+
+.unPoco h3 {
+  background-color: #71fb8d;
+  width: 50%;
+  grid-area: uPh3;
+  color: black;
+  font-size: 30px;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  margin: 15px auto; }
+
+.unPoco .p2 {
+  grid-area: p2; }
+
+.unPoco .p3 {
+  grid-area: p3; }
+
+/* GRID AL INDEX */
+@media screen and (min-width: 768px) {
+  .navbar {
+    grid-area: navbar; }
+  .main {
+    grid-area: main; }
+  .unPoco {
+    grid-area: unPoco; }
+  .footer {
+    grid-area: footer; }
+  .qSomos {
+    text-align: center;
+    align-items: center; }
+    .qSomos h3 {
+      text-align: center;
+      align-items: center;
+      margin: 20px auto; }
+    .qSomos .p1 {
+      margin: 20px auto; }
+    .qSomos .p1 {
+      margin: 10px auto;
+      text-align: center;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 450;
+      letter-spacing: 5px; }
+    .qSomos .img {
+      align-items: center;
+      margin: 5px auto; }
+  .unPoco {
+    margin-top: 30px; }
+    .unPoco .p2, .unPoco .p3 {
+      background-color: #71fb8d;
+      color: black;
+      text-align: center;
+      align-items: center;
+      width: 70%;
+      display: flex;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 55px auto;
+      letter-spacing: 7px; }
+  .cont-inicio {
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 105px auto auto;
+    grid-template-areas: "navbar navbar" "main unPoco" "footer footer"; } }
+
+/* INICIO DEL FOOTER */
+.footer {
+  text-align: center; }
+  .footer .pie {
+    border-top: 2px #242424 solid;
+    color: black;
+    margin-top: 50px; }
+    .footer .pie h4 {
+      font-size: 20px;
+      padding-left: 15px; }
+    .footer .pie .redes {
+      padding-bottom: 5px;
+      margin: 2px auto; }
+      .footer .pie .redes a {
+        padding-right: 7px; }
+  .footer .copyStyle {
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 15px; }
+
+/* INICIO MOBILE SERVICIOS */
+.main-serv {
+  grid-area: main-serv; }
+
+.servicios {
+  grid-area: servicios;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px; }
+  .servicios .card {
+    background-color: #71fb8d;
+    align-content: center;
+    margin: 50px auto;
+    margin-right: 35px; }
+  .servicios .servicios .card img {
+    margin: 5px auto; }
+  .servicios li a {
+    text-decoration: none; }
+  .servicios li h3 {
+    background-color: #757474;
+    color: white;
+    margin: 20px;
+    border: solid 1px black;
+    text-align: center;
+    border-radius: 3px;
+    text-decoration: none;
+    list-style: none; }
+    .servicios li h3:hover {
+      zoom: 1.25; }
+  .servicios .serv-1 {
+    grid-area: serv-1; }
+  .servicios .serv-2 {
+    grid-area: serv-2; }
+  .servicios .serv-3 {
+    grid-area: serv-3; }
+
+/* INICIO PRODUCTO */
+.main-product {
+  padding: 30px auto; }
+
+.list-group- li {
+  list-style: none;
+  text-decoration: none; }
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between; }
+  .product .cardIzq {
+    background-color: #71fb8d;
+    border: black 2px  solid;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: #c9baba;
+    align-content: center;
+    margin-left: 25px; }
+  .product .cardDer {
+    background-color: #71fb8d;
+    border: black 2px  solid;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: #c9baba;
+    align-content: center;
+    margin-left: 25px; }
+  .product img {
+    margin: 5px auto; }
+
+.card h5 {
+  font-size: 19px;
+  text-align: center;
+  padding: 15px; }
+
+.card ul li {
+  padding-bottom: 15px; }
+  .card ul li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border: 2px solid #423d3d; }
+    .card ul li a:hover {
+      color: green;
+      font-size: 20px; }
+
+/* PRODUCTOS */
+@media screen and (min-width: 768px) {
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .product .card {
+      background-color: #71fb8d;
+      border: black 2px  solid;
+      border-radius: 12px;
+      margin: 40px auto;
+      padding: 20px 30px;
+      box-shadow: #c9baba;
+      align-content: center; }
+      .product .card h5 {
+        font-size: 20px;
+        text-align: center;
+        padding: 15px; }
+    .product .cardIzq {
+      background-color: #71fb8d;
+      border: black 2px  solid;
+      border-radius: 12px;
+      margin: 80px;
+      margin-left: 180px;
+      padding: 20px 30px;
+      box-shadow: #c9baba; }
+    .product .cardDer {
+      background-color: #71fb8d;
+      border: black 2px  solid;
+      border-radius: 12px;
+      margin: 80px;
+      margin-right: 180px;
+      padding: 20px 30px;
+      box-shadow: #c9baba; }
+    .product img {
+      margin: 5px auto; } }
+
+/* MOBILE GALERIA */
+.main-galeria {
+  margin: 10px;
+  padding-top: 75px;
+  padding-bottom: 120px; }
+  .main-galeria .carousel-item img {
+    height: 18rem;
+    width: 18rem; }
+
+/*-------USO DE GRID PARA GALERIA-------*/
+@media screen and (min-width: 768px) {
+  .main-galeria {
+    margin: 100px;
+    max-height: 60%;
+    padding-top: 5px;
+    padding-bottom: auto; }
+    .main-galeria .carousel-item img {
+      height: 60%;
+      width: 60%; }
+  .container-galeria {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 105px auto auto;
+    grid-template-areas: "navbar navbar navbar" "main-galeria main-galeria main-galeria" "footer footer footer"; } }
+
+/* SECCION CONTACTO*/
+.formulario {
+  padding: 10px;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100%;
+  height: 800px; }
+
+/* PAGINA 404*/
+.imagen {
+  background-image: url(../fotos/error.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center; }
+  .imagen h1 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+    font-weight: 550;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f5f5f5; }
+  .imagen a {
+    position: absolute;
+    top: 80px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 200px;
+    padding-left: 25px; }
+
+@media screen and (min-width: 768px) {
+  .imagen {
+    background-image: url(../fotos/error.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center; }
+    .imagen h1 {
+      text-align: center;
+      padding-top: 150px;
+      padding-bottom: 600px;
+      font-weight: 550;
+      font-family: 'Courier New', Courier, monospace;
+      color: #f5f5f5; }
+    .imagen a {
+      position: absolute;
+      top: 400px;
+      text-decoration: none;
+      color: #f5f5f5;
+      font-size: 25px;
+      font-family: 'Courier New', Courier, monospace;
+      padding-top: 200px;
+      padding-left: 250px; } }
